@@ -41,7 +41,7 @@ def get_raw_feature_names():
 
 def get_all_feature_names():
     """Возвращает списки всех числовых и категориальных колонок после генерации признаков"""
-    return RAW_NUM_COLS + ENGINEERED_NUM_COLS, CAT_COLS + ENGINEERED_CAT_COLS
+    return RAW_NUM_COLS, CAT_COLS
 
 
 def add_features(df):
