@@ -46,7 +46,7 @@ def main():
             "y_test": y_test
         }
 
-    summary_df = pd.DataFrame(results).T.sort_values(by="test_roc_auc", ascending=False)
+    summary_df = pd.DataFrame(results).T.sort_values(by="cv_roc_auc", ascending=False)
     print("\nИтоговое сравнение моделей")
     print(summary_df[["cv_roc_auc", "test_roc_auc", "f1", "accuracy"]])
 
